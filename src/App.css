@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 350px;
+  padding: 20px;
+  color: white;
+  margin-bottom: 50px;
+  background: linear-gradient(to right,rgba(0, 0, 0, .7),rgba(120, 120, 220, .8)), url(https://unsplash.it/1920/400/?random) center center;
+  background: -webkit-linear-gradient(left,rgba(0, 0, 0, .7),rgba(120, 120, 220, .8)), url(https://unsplash.it/1920/400/?random) center center); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(0, 0, 0, .7),rgba(120, 120, 220, .8)), url(https://unsplash.it/1920/400/?random) center center); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(0, 0, 0, .7),rgba(120, 120, 220, .8)), url(https://unsplash.it/1920/400/?random) center center); /* For Firefox 3.6 to 15 */
+  background-size: cover;
+}
+
+.App-header h2 {
+  line-height: 350px;
+  margin: 0;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.search-results-div {
+  margin-top: 50px;
+}
+
+.twitch-loader-holder {
+  width: 90px;
+  height: 90px;
+  background: white;
+  line-height: 90px;
+  text-align: center;
+  border: 4px dotted red;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  animation: rotate-holder 22s infinite linear;
+}
+
+.twitch-loader-circle {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 22.5px;
+  background: blue;
+  margin: 0;
+  border-radius: 50%;
+  animation: twitch-loader 2s infinite linear;
+}
+
+@keyframes rotate-holder {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes twitch-loader {
+  0% {
+    top: 45px;
+    left: 22.5px;
+    bottom: 0;
+    right: 22.5px;
+  }
+
+  25% {
+    top: 22.5px;
+    left: 0;
+    bottom: 22.5px;
+    right: 45px;
+  }
+
+  50% {
+    top: 0;
+    left: 22.5px;
+    bottom: 45px;
+    right: 22.5px;
+  }
+
+  75% {
+    top: 22.5px;
+    left: 45px;
+    bottom: 22.5px;
+    right: 0;
+  }
+
+  100% {
+    top: 45px;
+    left: 22.5px;
+    bottom: 0;
+    right: 22.5px;
+  }
+}
